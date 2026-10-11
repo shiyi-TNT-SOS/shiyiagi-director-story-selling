@@ -1,7 +1,8 @@
 ---
 name: director-story-selling
 description: 剧情化带货短视频的导演提示词封装。当用户要做「有剧情、有转折、最后卖货」的短视频，需要设计前3秒钩子、痛点场景、转折、产品登场、结果对比、CTA 的镜头化呈现时使用。与纯口播/混剪带货的区别在于：本 skill 用导演视角把卖点藏进故事里。触发词包括「剧情带货」「剧情短视频」「带货分镜」「种草剧情」「短视频导演」「带货短片」「剧情脚本」。注意：选品、爆款拆解、口播文案走 ecommerce-video-workbench；品牌形象片走 director-ad-tvc。
-author: 十一AGI
+author: 柳十一（十一AGI认知圈）
+license: MIT
 version: 1.0.0
 agent_created: true
 ---
