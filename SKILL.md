@@ -1,6 +1,6 @@
 ---
-name: director-story-selling
-description: 剧情化带货短视频的导演提示词封装。当用户要做「有剧情、有转折、最后卖货」的短视频，需要设计前3秒钩子、痛点场景、转折、产品登场、结果对比、CTA 的镜头化呈现时使用。与纯口播/混剪带货的区别在于：本 skill 用导演视角把卖点藏进故事里。触发词包括「剧情带货」「剧情短视频」「带货分镜」「种草剧情」「短视频导演」「带货短片」「剧情脚本」。注意：选品、爆款拆解、口播文案走 ecommerce-video-workbench；品牌形象片走 director-ad-tvc。
+name: shiyiagi-director-story-selling
+description: 剧情化带货短视频的导演提示词封装。当用户要做「有剧情、有转折、最后卖货」的短视频，需要设计前3秒钩子、痛点场景、转折、产品登场、结果对比、CTA 的镜头化呈现时使用。与纯口播/混剪带货的区别在于：本 skill 用导演视角把卖点藏进故事里。触发词包括「剧情带货」「剧情短视频」「带货分镜」「种草剧情」「短视频导演」「带货短片」「剧情脚本」。注意：选品、爆款拆解、口播文案走 ecommerce-video-workbench；品牌形象片走 shiyiagi-director-ad-tvc。
 author: 柳十一（十一AGI认知圈）
 license: MIT
 version: 1.0.0
@@ -34,8 +34,8 @@ agent_created: true
 - 用户需要前 3 秒钩子的多个备选方案。
 
 **不适用**：
-- 品牌形象片、TVC、产品质感广告（不追求即时转化） → `director-ad-tvc`
-- 武打 / 格斗 / 动作戏（要动作设计、打击感） → `director-action`
+- 品牌形象片、TVC、产品质感广告（不追求即时转化） → `shiyiagi-director-ad-tvc`
+- 武打 / 格斗 / 动作戏（要动作设计、打击感） → `shiyiagi-director-action`
 - 选品、爆款拆解、口播口播稿、平台投放策略 → `ecommerce-video-workbench`
 - 纯口播 / 混剪带货（不需要剧情） → `ecommerce-video-workbench`
 
@@ -107,7 +107,7 @@ agent_created: true
 ### references/
 - `story-director-prompt.md` — 剧情带货导演主提示词模板（含六段转化骨架）、三种风格变体（生活纪实 / 反差反转 / 人设连续剧）、分镜表输出契约。
 - `conversion-skeleton.md` — 六段转化骨架详解、前 3 秒钩子库（8 类）、转折设计方法、CTA 写法、评论区预判。核心方法论文件。
-- `lens-grammar.md` — 镜头语法七维速查（景别/角度/运镜/光学/光影/色彩/表演调度），含中英文对照。与 `director-ad-tvc` 通用。
+- `lens-grammar.md` — 镜头语法七维速查（景别/角度/运镜/光学/光影/色彩/表演调度），含中英文对照。与 `shiyiagi-director-ad-tvc` 通用。
 - `ai-video-prompt.md` — 分镜转视频模型提示词，带货场景专用（产品一致性、人物限制、排除项）。
 - `compliance.md` — 带货合规红线，比品牌广告更严格，含平台特殊规则与画面层面风险。
 
@@ -130,7 +130,7 @@ agent_created: true
 ## Notes
 
 - 本 skill 只做**创意与分镜交付**，不负责拍摄、剪辑、发布与数据复盘。
-- 与 `director-ad-tvc` 的关系：镜头语法通用，但**转化骨架不通用**。广告片套带货骨架会显得廉价，带货套广告片骨架会不卖货。
+- 与 `shiyiagi-director-ad-tvc` 的关系：镜头语法通用，但**转化骨架不通用**。广告片套带货骨架会显得廉价，带货套广告片骨架会不卖货。
 - 与 `ecommerce-video-workbench` 的关系：工作台覆盖选品→脚本→分镜全流程；本 skill 只做导演层，输入是"已确定的卖点与目标人群"，输出是"怎么用剧情把它演出来"。
 - 平台规则变化快，合规部分以投放平台最新规则与后台违禁词检测为最终依据。
 - 真实投放后，把高完播的钩子类型和转折方式沉淀回 `references/conversion-skeleton.md`，减少每次重复推理。

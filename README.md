@@ -1,4 +1,4 @@
-# director-story-selling · 剧情带货导演提示词
+# shiyiagi-director-story-selling · 剧情带货导演提示词
 
 > 把卖点藏进故事里，而不是直接念卖点。
 > 一个给 AI 视频生成用的「导演提示词」封装 —— 输入卖点和人群，输出**不跑偏、能卖货**的分镜。
@@ -58,14 +58,14 @@
 ### 方式一：SkillHub（推荐）
 
 ```bash
-skillhub install director-story-selling --dir ~/.workbuddy/skills/
+skillhub install shiyiagi-director-story-selling --dir ~/.workbuddy/skills/
 ```
 
 ### 方式二：手动 clone
 
 ```bash
-git clone https://github.com/shiyi-TNT-SOS/director-story-selling.git \
-  ~/.workbuddy/skills/director-story-selling
+git clone https://github.com/shiyi-TNT-SOS/shiyiagi-director-story-selling.git \
+  ~/.workbuddy/skills/shiyiagi-director-story-selling
 ```
 
 Claude Code 用户把目标目录换成 `~/.claude/skills/` 即可。
@@ -79,7 +79,7 @@ Claude Code 用户把目标目录换成 `~/.claude/skills/` 即可。
 ## 目录结构
 
 ```
-director-story-selling/
+shiyiagi-director-story-selling/
 ├── SKILL.md                          # 主入口：标准流程七步 + 自检清单
 └── references/
     ├── conversion-skeleton.md        # ★ 核心方法论：六段骨架详解 + 8 类钩子库 + CTA 写法
@@ -128,10 +128,10 @@ director-story-selling/
 
 | Skill | 适用 | 与本文的关系 |
 |---|---|---|
-| `director-ad-tvc` | 品牌广告片 / TVC / 形象片 | 镜头语法通用，**转化骨架不通用** —— 带货套广告骨架会不卖货 |
-| `director-film` | 故事片 / 叙事短片 | 要人物弧光、三幕结构时用它，不要强塞带货骨架 |
-| `director-action` | 武打 / 格斗 / 动作戏 | 需要四拍拆解（预备→冲击→结果→反应）时用它 |
-| `director-story-selling` | 剧情化带货短视频 | ← 你在这里 |
+| `shiyiagi-director-ad-tvc` | 品牌广告片 / TVC / 形象片 | 镜头语法通用，**转化骨架不通用** —— 带货套广告骨架会不卖货 |
+| `shiyiagi-director-film` | 故事片 / 叙事短片 | 要人物弧光、三幕结构时用它，不要强塞带货骨架 |
+| `shiyiagi-director-action` | 武打 / 格斗 / 动作戏 | 需要四拍拆解（预备→冲击→结果→反应）时用它 |
+| `shiyiagi-director-story-selling` | 剧情化带货短视频 | ← 你在这里 |
 
 ---
 
